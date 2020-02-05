@@ -47,8 +47,20 @@ class ModelsVC: UIViewController, NSFetchedResultsControllerDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "productCard", sender: products[indexPath.row])
-        tableView.deselectRow(at: indexPath, animated: false)
+        switch typeOfProduct {
+        case .billAcceptor:
+            performSegue(withIdentifier: "paymentCard", sender: products[indexPath.row])
+            tableView.deselectRow(at: indexPath, animated: false)
+        case .coinAcceptor:
+            performSegue(withIdentifier: "paymentCard", sender: products[indexPath.row])
+            tableView.deselectRow(at: indexPath, animated: false)
+        case .cashless:
+            performSegue(withIdentifier: "paymentCard", sender: products[indexPath.row])
+            tableView.deselectRow(at: indexPath, animated: false)
+        default:
+            performSegue(withIdentifier: "productCard", sender: products[indexPath.row])
+            tableView.deselectRow(at: indexPath, animated: false)
+        }
     }
     
 
@@ -61,8 +73,8 @@ class ModelsVC: UIViewController, NSFetchedResultsControllerDelegate, UITableVie
 //            //(segue.description as? MainPDFViewController)
 //        }
         switch segue.identifier {
-        case "pdfView":
-            (segue.destination as? MainPDFViewController)!.product = (sender as? Product)!
+        case "paymentCard":
+            (segue.destination as? PaymentCardVC)!.product = (sender as? Product)!
         case "productCard":
             (segue.destination as? ProductCardVC)!.product = (sender as? Product)!
         default:

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,7 @@
 		09A8E9CD23D891E30031BE3E /* instr_necta_kikko_es_6_ru.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 09A8E9CC23D891E20031BE3E /* instr_necta_kikko_es_6_ru.pdf */; };
 		09C7436C23C8A646000804B2 /* ModelsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C7436B23C8A646000804B2 /* ModelsVC.swift */; };
 		09C7437023C8B380000804B2 /* ModelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C7436F23C8B380000804B2 /* ModelsCell.swift */; };
+		09CB794723EAC393002626AF /* PaymentCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CB794623EAC393002626AF /* PaymentCardVC.swift */; };
 		09CBD34F23D9C69F0021E313 /* DosesModelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CBD34E23D9C69F0021E313 /* DosesModelVC.swift */; };
 		09D6AC0623E0A82C00F2A679 /* ProductCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D6AC0523E0A82C00F2A679 /* ProductCardVC.swift */; };
 		09D7F64523C88A3F00D6DACC /* VendorsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7F64423C88A3F00D6DACC /* VendorsCell.swift */; };
@@ -58,6 +59,7 @@
 		09A8E9CC23D891E20031BE3E /* instr_necta_kikko_es_6_ru.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = instr_necta_kikko_es_6_ru.pdf; sourceTree = "<group>"; };
 		09C7436B23C8A646000804B2 /* ModelsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsVC.swift; sourceTree = "<group>"; };
 		09C7436F23C8B380000804B2 /* ModelsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsCell.swift; sourceTree = "<group>"; };
+		09CB794623EAC393002626AF /* PaymentCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCardVC.swift; sourceTree = "<group>"; };
 		09CBD34E23D9C69F0021E313 /* DosesModelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DosesModelVC.swift; sourceTree = "<group>"; };
 		09D6AC0523E0A82C00F2A679 /* ProductCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardVC.swift; sourceTree = "<group>"; };
 		09D7F64423C88A3F00D6DACC /* VendorsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorsCell.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				093B63CB23BCEBEF002F31D5 /* VendorsVC.swift */,
 				09C7436B23C8A646000804B2 /* ModelsVC.swift */,
 				09D6AC0523E0A82C00F2A679 /* ProductCardVC.swift */,
+				09CB794623EAC393002626AF /* PaymentCardVC.swift */,
 				09CBD34E23D9C69F0021E313 /* DosesModelVC.swift */,
 				09A8E9CA23D7092B0031BE3E /* MainPDFViewController.swift */,
 				0931A1F023D8BCD400A5FE40 /* mainPDFView.swift */,
@@ -281,6 +284,7 @@
 				093F87BD23A67217003B6153 /* Rem_Vend.xcdatamodeld in Sources */,
 				093F87B123A67217003B6153 /* AppDelegate.swift in Sources */,
 				094801E623E9FEEA00ED2804 /* PaymentVC.swift in Sources */,
+				09CB794723EAC393002626AF /* PaymentCardVC.swift in Sources */,
 				093F87B323A67217003B6153 /* SceneDelegate.swift in Sources */,
 				097B5D3823D99D820055219E /* MachinesVC.swift in Sources */,
 				093B63CC23BCEBEF002F31D5 /* VendorsVC.swift in Sources */,
