@@ -12,11 +12,14 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        window?.tintColor = #colorLiteral(red: 0.08744991571, green: 0.7839367986, blue: 0.7748929858, alpha: 1)
         return true
+        
+        
+        
     }
 
     // MARK: UISceneSession Lifecycle

@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091C2BCF23BCA8DC005C727F /* Vendors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C2BCE23BCA8DC005C727F /* Vendors.swift */; };
+		091C2BD123BCAE75005C727F /* TypeOfDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C2BD023BCAE75005C727F /* TypeOfDevice.swift */; };
+		091C2BD823BCB118005C727F /* InitialFiller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C2BD723BCB118005C727F /* InitialFiller.swift */; };
+		0931A1F123D8BCD400A5FE40 /* mainPDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931A1F023D8BCD400A5FE40 /* mainPDFView.swift */; };
+		093B63CC23BCEBEF002F31D5 /* VendorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093B63CB23BCEBEF002F31D5 /* VendorsVC.swift */; };
 		093F87B123A67217003B6153 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093F87B023A67217003B6153 /* AppDelegate.swift */; };
 		093F87B323A67217003B6153 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093F87B223A67217003B6153 /* SceneDelegate.swift */; };
 		093F87B523A67217003B6153 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093F87B423A67217003B6153 /* FirstViewController.swift */; };
@@ -15,9 +20,26 @@
 		093F87BD23A67217003B6153 /* Rem_Vend.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 093F87BB23A67217003B6153 /* Rem_Vend.xcdatamodeld */; };
 		093F87BF23A6721A003B6153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 093F87BE23A6721A003B6153 /* Assets.xcassets */; };
 		093F87C223A6721A003B6153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093F87C023A6721A003B6153 /* LaunchScreen.storyboard */; };
+		094801E623E9FEEA00ED2804 /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094801E523E9FEEA00ED2804 /* PaymentVC.swift */; };
+		0962650E23E9EC43008609C4 /* ClearCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0962650D23E9EC43008609C4 /* ClearCache.swift */; };
+		097B5D3823D99D820055219E /* MachinesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B5D3723D99D820055219E /* MachinesVC.swift */; };
+		09A8E9C323D6F9BA0031BE3E /* BaseURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A8E9C223D6F9BA0031BE3E /* BaseURLs.swift */; };
+		09A8E9CB23D7092B0031BE3E /* MainPDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A8E9CA23D7092B0031BE3E /* MainPDFViewController.swift */; };
+		09A8E9CD23D891E30031BE3E /* instr_necta_kikko_es_6_ru.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 09A8E9CC23D891E20031BE3E /* instr_necta_kikko_es_6_ru.pdf */; };
+		09C7436C23C8A646000804B2 /* ModelsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C7436B23C8A646000804B2 /* ModelsVC.swift */; };
+		09C7437023C8B380000804B2 /* ModelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C7436F23C8B380000804B2 /* ModelsCell.swift */; };
+		09CBD34F23D9C69F0021E313 /* DosesModelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CBD34E23D9C69F0021E313 /* DosesModelVC.swift */; };
+		09D6AC0623E0A82C00F2A679 /* ProductCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D6AC0523E0A82C00F2A679 /* ProductCardVC.swift */; };
+		09D7F64523C88A3F00D6DACC /* VendorsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7F64423C88A3F00D6DACC /* VendorsCell.swift */; };
+		E70AD2D7B1ECC5087A5CB9D6 /* libPods-Rem Vend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52EF1FA64C206A61FD44549D /* libPods-Rem Vend.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		091C2BCE23BCA8DC005C727F /* Vendors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vendors.swift; sourceTree = "<group>"; };
+		091C2BD023BCAE75005C727F /* TypeOfDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfDevice.swift; sourceTree = "<group>"; };
+		091C2BD723BCB118005C727F /* InitialFiller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialFiller.swift; sourceTree = "<group>"; };
+		0931A1F023D8BCD400A5FE40 /* mainPDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPDFView.swift; sourceTree = "<group>"; };
+		093B63CB23BCEBEF002F31D5 /* VendorsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorsVC.swift; sourceTree = "<group>"; };
 		093F87AD23A67217003B6153 /* Rem Vend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rem Vend.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		093F87B023A67217003B6153 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		093F87B223A67217003B6153 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +50,20 @@
 		093F87BE23A6721A003B6153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		093F87C123A6721A003B6153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		093F87C323A6721A003B6153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		094801E523E9FEEA00ED2804 /* PaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
+		0962650D23E9EC43008609C4 /* ClearCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearCache.swift; sourceTree = "<group>"; };
+		097B5D3723D99D820055219E /* MachinesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachinesVC.swift; sourceTree = "<group>"; };
+		09A8E9C223D6F9BA0031BE3E /* BaseURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURLs.swift; sourceTree = "<group>"; };
+		09A8E9CA23D7092B0031BE3E /* MainPDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPDFViewController.swift; sourceTree = "<group>"; };
+		09A8E9CC23D891E20031BE3E /* instr_necta_kikko_es_6_ru.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = instr_necta_kikko_es_6_ru.pdf; sourceTree = "<group>"; };
+		09C7436B23C8A646000804B2 /* ModelsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsVC.swift; sourceTree = "<group>"; };
+		09C7436F23C8B380000804B2 /* ModelsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsCell.swift; sourceTree = "<group>"; };
+		09CBD34E23D9C69F0021E313 /* DosesModelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DosesModelVC.swift; sourceTree = "<group>"; };
+		09D6AC0523E0A82C00F2A679 /* ProductCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardVC.swift; sourceTree = "<group>"; };
+		09D7F64423C88A3F00D6DACC /* VendorsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorsCell.swift; sourceTree = "<group>"; };
+		42A60C7A385D405FAF0E7D40 /* Pods-Rem Vend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rem Vend.release.xcconfig"; path = "Target Support Files/Pods-Rem Vend/Pods-Rem Vend.release.xcconfig"; sourceTree = "<group>"; };
+		52EF1FA64C206A61FD44549D /* libPods-Rem Vend.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rem Vend.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D13FA82BE4FBDDA50DE972 /* Pods-Rem Vend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rem Vend.debug.xcconfig"; path = "Target Support Files/Pods-Rem Vend/Pods-Rem Vend.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +71,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E70AD2D7B1ECC5087A5CB9D6 /* libPods-Rem Vend.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		091C2BD223BCAFCE005C727F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				091C2BD023BCAE75005C727F /* TypeOfDevice.swift */,
+				09A8E9C223D6F9BA0031BE3E /* BaseURLs.swift */,
+				091C2BCE23BCA8DC005C727F /* Vendors.swift */,
+				09D7F64423C88A3F00D6DACC /* VendorsCell.swift */,
+				09C7436F23C8B380000804B2 /* ModelsCell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		093F87A423A67217003B6153 = {
 			isa = PBXGroup;
 			children = (
 				093F87AF23A67217003B6153 /* Rem Vend */,
 				093F87AE23A67217003B6153 /* Products */,
+				94033600F1B24D9BEECFD39E /* Pods */,
+				8CCB2C7FABFEAE079DACDCA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,17 +111,62 @@
 		093F87AF23A67217003B6153 /* Rem Vend */ = {
 			isa = PBXGroup;
 			children = (
+				09A8E9CC23D891E20031BE3E /* instr_necta_kikko_es_6_ru.pdf */,
+				0962650F23E9ECE8008609C4 /* Staff */,
+				091C2BD223BCAFCE005C727F /* Models */,
 				093F87B023A67217003B6153 /* AppDelegate.swift */,
-				093F87B223A67217003B6153 /* SceneDelegate.swift */,
-				093F87B423A67217003B6153 /* FirstViewController.swift */,
-				093F87B623A67217003B6153 /* SecondViewController.swift */,
 				093F87B823A67217003B6153 /* Main.storyboard */,
+				09415AE823D0F7450072EB9A /* ViewControllers */,
+				093F87B223A67217003B6153 /* SceneDelegate.swift */,
 				093F87BE23A6721A003B6153 /* Assets.xcassets */,
 				093F87C023A6721A003B6153 /* LaunchScreen.storyboard */,
 				093F87C323A6721A003B6153 /* Info.plist */,
 				093F87BB23A67217003B6153 /* Rem_Vend.xcdatamodeld */,
 			);
 			path = "Rem Vend";
+			sourceTree = "<group>";
+		};
+		09415AE823D0F7450072EB9A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				093F87B423A67217003B6153 /* FirstViewController.swift */,
+				097B5D3723D99D820055219E /* MachinesVC.swift */,
+				094801E523E9FEEA00ED2804 /* PaymentVC.swift */,
+				093B63CB23BCEBEF002F31D5 /* VendorsVC.swift */,
+				09C7436B23C8A646000804B2 /* ModelsVC.swift */,
+				09D6AC0523E0A82C00F2A679 /* ProductCardVC.swift */,
+				09CBD34E23D9C69F0021E313 /* DosesModelVC.swift */,
+				09A8E9CA23D7092B0031BE3E /* MainPDFViewController.swift */,
+				0931A1F023D8BCD400A5FE40 /* mainPDFView.swift */,
+				093F87B623A67217003B6153 /* SecondViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0962650F23E9ECE8008609C4 /* Staff */ = {
+			isa = PBXGroup;
+			children = (
+				0962650D23E9EC43008609C4 /* ClearCache.swift */,
+				091C2BD723BCB118005C727F /* InitialFiller.swift */,
+			);
+			path = Staff;
+			sourceTree = "<group>";
+		};
+		8CCB2C7FABFEAE079DACDCA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52EF1FA64C206A61FD44549D /* libPods-Rem Vend.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94033600F1B24D9BEECFD39E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2D13FA82BE4FBDDA50DE972 /* Pods-Rem Vend.debug.xcconfig */,
+				42A60C7A385D405FAF0E7D40 /* Pods-Rem Vend.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 093F87C623A6721A003B6153 /* Build configuration list for PBXNativeTarget "Rem Vend" */;
 			buildPhases = (
+				2CB3FC6DD03A1352F4A0F8A4 /* [CP] Check Pods Manifest.lock */,
 				093F87A923A67217003B6153 /* Sources */,
 				093F87AA23A67217003B6153 /* Frameworks */,
 				093F87AB23A67217003B6153 /* Resources */,
@@ -132,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				093F87C223A6721A003B6153 /* LaunchScreen.storyboard in Resources */,
+				09A8E9CD23D891E30031BE3E /* instr_necta_kikko_es_6_ru.pdf in Resources */,
 				093F87BF23A6721A003B6153 /* Assets.xcassets in Resources */,
 				093F87BA23A67217003B6153 /* Main.storyboard in Resources */,
 			);
@@ -139,16 +237,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2CB3FC6DD03A1352F4A0F8A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rem Vend-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		093F87A923A67217003B6153 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				093F87B723A67217003B6153 /* SecondViewController.swift in Sources */,
+				09A8E9C323D6F9BA0031BE3E /* BaseURLs.swift in Sources */,
+				0931A1F123D8BCD400A5FE40 /* mainPDFView.swift in Sources */,
 				093F87B523A67217003B6153 /* FirstViewController.swift in Sources */,
+				09CBD34F23D9C69F0021E313 /* DosesModelVC.swift in Sources */,
+				09A8E9CB23D7092B0031BE3E /* MainPDFViewController.swift in Sources */,
+				09D6AC0623E0A82C00F2A679 /* ProductCardVC.swift in Sources */,
+				09D7F64523C88A3F00D6DACC /* VendorsCell.swift in Sources */,
+				09C7436C23C8A646000804B2 /* ModelsVC.swift in Sources */,
+				09C7437023C8B380000804B2 /* ModelsCell.swift in Sources */,
+				091C2BD823BCB118005C727F /* InitialFiller.swift in Sources */,
 				093F87BD23A67217003B6153 /* Rem_Vend.xcdatamodeld in Sources */,
 				093F87B123A67217003B6153 /* AppDelegate.swift in Sources */,
+				094801E623E9FEEA00ED2804 /* PaymentVC.swift in Sources */,
 				093F87B323A67217003B6153 /* SceneDelegate.swift in Sources */,
+				097B5D3823D99D820055219E /* MachinesVC.swift in Sources */,
+				093B63CC23BCEBEF002F31D5 /* VendorsVC.swift in Sources */,
+				091C2BD123BCAE75005C727F /* TypeOfDevice.swift in Sources */,
+				0962650E23E9EC43008609C4 /* ClearCache.swift in Sources */,
+				091C2BCF23BCA8DC005C727F /* Vendors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +428,10 @@
 		};
 		093F87C723A6721A003B6153 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2D13FA82BE4FBDDA50DE972 /* Pods-Rem Vend.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DME5NZ9PB5;
 				INFOPLIST_FILE = "Rem Vend/Info.plist";
@@ -301,6 +441,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "IM.Rem-Vend";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -308,8 +449,10 @@
 		};
 		093F87C823A6721A003B6153 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A60C7A385D405FAF0E7D40 /* Pods-Rem Vend.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DME5NZ9PB5;
 				INFOPLIST_FILE = "Rem Vend/Info.plist";
@@ -319,6 +462,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "IM.Rem-Vend";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Product" representedClassName="Product" syncable="YES" codeGenerationType="class">
+        <attribute name="doses" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="instruction" optional="YES" attributeType="String"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="madeIn" optional="YES" attributeType="String" defaultValueString="-"/>
+        <attribute name="model" attributeType="String"/>
+        <attribute name="power" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sizes" optional="YES" attributeType="String" defaultValueString="0x0x0"/>
+        <attribute name="type" attributeType="String"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="vendor" maxCount="1" deletionRule="Nullify" destinationEntity="Vendor" inverseName="products" inverseEntity="Vendor"/>
+    </entity>
+    <entity name="Vendor" representedClassName="Vendor" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="vendor" inverseEntity="Product"/>
+    </entity>
+    <elements>
+        <element name="Product" positionX="324.75390625" positionY="-160.43359375" width="128" height="208"/>
+        <element name="Vendor" positionX="-63" positionY="27" width="128" height="88"/>
+    </elements>
 </model>
