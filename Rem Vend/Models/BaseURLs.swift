@@ -13,4 +13,5 @@ enum baseServerURL: String {
     case payment = "https://remvend.ru/base-info/payment/"
     case telemetry = "https://remvend.ru/base-info/telemetry/"
     case instruction = "https://remvend.ru/base-info/instruction/"
+    case image = "https://remvend.ru/base-info/img/"
 }

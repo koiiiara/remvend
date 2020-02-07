@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import Alamofire
 
 class PaymentCardVC: UIViewController {
 
     var product = Product()
+    let libraryURL = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask)[0]
     
     @IBOutlet var leftButton: UIButton!
-    //@IBOutlet var rightButton: UIButton!
     
     @IBOutlet var productImage: UIImageView!
     
@@ -36,7 +37,17 @@ class PaymentCardVC: UIViewController {
     
 
     func configureFor(product: Product) {
-        //self.productImage.image =
+        var imageURL: URL
+        if product.image != nil {
+            imageURL = libraryURL.appendingPathComponent(product.image!)
+            if FileManager.default.fileExists(atPath: imageURL.path) {
+                productImage.image = UIImage(contentsOfFile: imageURL.path)
+            } else {
+                downloadImage()
+            }
+        } else {
+            productImage.image = #imageLiteral(resourceName: "no_photo-1")
+        }
         
         if product.instruction != nil {
             leftButton.isEnabled = true
@@ -46,6 +57,26 @@ class PaymentCardVC: UIViewController {
     }
     
  
+    func downloadImage() {
+        let destination: DownloadRequest.Destination = { _, _ in
+            let fileURL = self.libraryURL.appendingPathComponent(self.product.image!)
+            return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
+        }
+        
+        let baseURL = "\(baseServerURL.image.rawValue)\(self.product.image!)"
+        AF.download(baseURL, to: destination).response { response in
+                   //debugPrint(response)
+            if response.error == nil, let imageURL = response.fileURL {
+                DispatchQueue.main.async {
+                    self.productImage.image = UIImage(contentsOfFile: imageURL.path)
+                }
+            } else {
+                return
+            }
+        }
+        
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toInstruction" {
             (segue.destination as! MainPDFViewController).documentType = TypeOfDocument.instruction

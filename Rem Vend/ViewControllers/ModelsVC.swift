@@ -47,31 +47,25 @@ class ModelsVC: UIViewController, NSFetchedResultsControllerDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
         switch typeOfProduct {
         case .billAcceptor:
             performSegue(withIdentifier: "paymentCard", sender: products[indexPath.row])
-            tableView.deselectRow(at: indexPath, animated: false)
         case .coinAcceptor:
             performSegue(withIdentifier: "paymentCard", sender: products[indexPath.row])
-            tableView.deselectRow(at: indexPath, animated: false)
         case .cashless:
             performSegue(withIdentifier: "paymentCard", sender: products[indexPath.row])
-            tableView.deselectRow(at: indexPath, animated: false)
+        case .telemtry:
+            performSegue(withIdentifier: "paymentCard", sender: products[indexPath.row])
         default:
             performSegue(withIdentifier: "productCard", sender: products[indexPath.row])
-            tableView.deselectRow(at: indexPath, animated: false)
         }
     }
     
 
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "pdfView" {
-//            (segue.destination as? MainPDFViewController)!.product = (sender as? Product)!
-//            //(segue.description as? MainPDFViewController)
-//        }
         switch segue.identifier {
         case "paymentCard":
             (segue.destination as? PaymentCardVC)!.product = (sender as? Product)!
@@ -80,7 +74,5 @@ class ModelsVC: UIViewController, NSFetchedResultsControllerDelegate, UITableVie
         default:
             return
         }
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
 }

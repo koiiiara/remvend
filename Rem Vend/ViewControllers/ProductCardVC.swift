@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import Alamofire
 
 class ProductCardVC: UIViewController {
 
     var product = Product()
+    let libraryURL = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask)[0]
+
     
     @IBOutlet var leftButton: UIButton!
     @IBOutlet var rightButton: UIButton!
@@ -38,7 +41,17 @@ class ProductCardVC: UIViewController {
     
 
     func configureFor(product: Product) {
-        //self.productImage.image =
+        var imageURL: URL
+        if product.image != nil {
+            imageURL = libraryURL.appendingPathComponent(product.image!)
+            if FileManager.default.fileExists(atPath: imageURL.path) {
+                productImage.image = UIImage(contentsOfFile: imageURL.path)
+            } else {
+                downloadImage()
+            }
+        } else {
+            productImage.image = #imageLiteral(resourceName: "no_photo-1")
+        }
         self.nrgLabel.text = "\(product.power)W"
         self.sizesLabel.text = "\(product.sizes!)mm"
         self.weightLabel.text = "\(product.weight)kg"
@@ -56,7 +69,29 @@ class ProductCardVC: UIViewController {
         }
     }
     
- 
+    
+    func downloadImage() {
+           let destination: DownloadRequest.Destination = { _, _ in
+               let fileURL = self.libraryURL.appendingPathComponent(self.product.image!)
+               return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
+           }
+           
+        let baseURL = "\(baseServerURL.image.rawValue)\(self.product.image!)"
+           AF.download(baseURL, to: destination).response { response in
+                      //debugPrint(response)
+               if response.error == nil, let imageURL = response.fileURL {
+                          //MARK: - Open PDF Document
+                   DispatchQueue.main.async {
+                       self.productImage.image = UIImage(contentsOfFile: imageURL.path)
+                   }
+               } else {
+                   return
+               }
+           }
+           
+    }
+    
+     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case "toInstruction":

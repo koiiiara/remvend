@@ -32,6 +32,9 @@ class MainPDFViewController: UIViewController {
     @IBOutlet var progressLabel: UILabel!
     @IBOutlet var progressBar: UIProgressView!
     
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let pdfURL = libraryURL.appendingPathComponent(pdfName)
@@ -43,6 +46,9 @@ class MainPDFViewController: UIViewController {
             openRemoteDocument()
         }
     }
+    
+    
+    
     
     //MARK: - Open local file
     func openLocalDocument(pdfURL: URL) {

@@ -9,7 +9,7 @@
 import UIKit
 
 class PaymentVC: UIViewController {
-
+    
     @IBOutlet var menuPoint1: UIView!
     @IBOutlet var menuPoint2: UIView!
     @IBOutlet var menuPoint3: UIView!

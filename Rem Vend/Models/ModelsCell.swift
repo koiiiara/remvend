@@ -17,7 +17,6 @@ class ModelsCell: UITableViewCell {
     @IBAction func tapStar(_ sender: Any) {
         currentProduct.isFavorite = !currentProduct.isFavorite
         let app = UIApplication.shared.delegate as? AppDelegate
-        print(currentProduct.isFavorite)
         app!.saveContext()
         if currentProduct.isFavorite {
             imageStar.setImage(UIImage(systemName: "star.fill"), for: .normal)

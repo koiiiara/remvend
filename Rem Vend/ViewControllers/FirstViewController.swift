@@ -8,20 +8,32 @@
 
 import UIKit
 
+
 class FirstViewController: UIViewController{
 
+  
+    @IBOutlet var swipeRecognizer: UIScreenEdgePanGestureRecognizer!
     @IBOutlet var menuPoint1: UIView!
-    @IBOutlet var menuPoint3: UIView!
     @IBOutlet var menuPoint4: UIView!
     @IBOutlet var menuPoint5: UIView!
-
+    private let transition = PanelTransition()
+   // let child = ChildViewController()
+    
+    @IBOutlet var menuButton: UIBarButtonItem!
+    
+    @IBAction func openDidPress(_ sender: Any) {
+        let child = ChildViewController()
+           child.transitioningDelegate = transition
+           child.modalPresentationStyle = .custom
+           
+           present(child, animated: true)
+       }
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         var menuPoints = [UIView]()
         //fillCoreData()
-        menuPoints = [menuPoint1, menuPoint3, menuPoint4, menuPoint5]
+        menuPoints = [menuPoint1, menuPoint4, menuPoint5]
         for i in menuPoints {
             i.layer.cornerRadius = 15            
             i.layer.masksToBounds = false
@@ -30,14 +42,8 @@ class FirstViewController: UIViewController{
             i.layer.shadowOffset = CGSize(width: 0, height: 1)
             i.layer.shadowRadius = 1
         }
-        
-        //MARK: - Customize navigation controller
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage()
-        
-        if #available(iOS 11.0, *) {
-            navigationController?.navigationBar.prefersLargeTitles = true
-        }
+    configureNavigationController(for: navigationController!)
+       
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -46,7 +52,9 @@ class FirstViewController: UIViewController{
         case "fromMenuToMachines" :
             (segue.destination as! MachinesVC).section = Sections.machines
         case "fromMenuToPayment" :
-            (segue.destination as! MachinesVC).section = Sections.payment
+            return//(segue.destination as! PaymentVC).section = Sections.payment
+        case "fromMenuToTelemetry":
+            (segue.destination as! VendorsVC).typeOfProduct = TypeOfDevice.telemtry
         default:
             return
         }

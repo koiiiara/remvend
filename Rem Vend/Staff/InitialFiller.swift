@@ -74,6 +74,7 @@ func fillCoreData() {
     product005.type = TypeOfDevice.vendingCoffee.rawValue
     product005.instruction = "instr_necta_kikko_es_6_ru.pdf"
     product005.doses = "dose_necta_kikko_es_6_layout_48.pdf"
+    product005.image = "img_necta_kikko_es6.png"
     
     //MARK: Necta Kikko MAX
     let product006 = Product(context: context)

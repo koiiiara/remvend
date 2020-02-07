@@ -19,6 +19,7 @@ enum VendorName: String {
     case bianchi = "Bianchi"
     case fas = "FAS"
     case rheavendors = "Rheavendors"
+    
     //MARK:  Payment Systems
     case paytech = "PayTech"
     case mei = "MEI"
@@ -26,10 +27,12 @@ enum VendorName: String {
     case vendotek = "Vendotek"
     case pax = "PAX"
     case nri = "NRI"
+    
     //MARK: Coffee Machines
     case delonghi = "Delonghi"
     case jura = "Jura"
     case philips = "Philips"
+    
     //MARK: Telemetry
     case telemetron = "Telemetron"
 }
