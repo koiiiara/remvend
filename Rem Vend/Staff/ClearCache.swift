@@ -9,15 +9,17 @@
 import Foundation
 
 func clearCache() {
-    let fileManager = FileManager.default
+  let documentsUrl =  FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).first!
+
     do {
-        let documentDirectoryURL = try fileManager.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
-        let fileURLs = try fileManager.contentsOfDirectory(at: documentDirectoryURL, includingPropertiesForKeys: nil, options: [.skipsHiddenFiles, .skipsSubdirectoryDescendants])
-        for url in fileURLs
-        {
-            try fileManager.removeItem(at: url)
+        let fileURLs = try FileManager.default.contentsOfDirectory(at: documentsUrl,
+                                                                   includingPropertiesForKeys: nil,
+                                                                   options: [.skipsHiddenFiles, .skipsSubdirectoryDescendants])
+
+        for fileURL in fileURLs {
+            if fileURL.pathExtension == "pdf" {
+                try FileManager.default.removeItem(at: fileURL)
+            }
         }
-    } catch {
-        print(error)
-    }
+    } catch  { print(error) }
 }

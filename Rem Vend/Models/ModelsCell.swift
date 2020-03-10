@@ -19,9 +19,9 @@ class ModelsCell: UITableViewCell {
         let app = UIApplication.shared.delegate as? AppDelegate
         app!.saveContext()
         if currentProduct.isFavorite {
-            imageStar.setImage(UIImage(systemName: "star.fill"), for: .normal)
+            imageStar.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
                } else {
-                   imageStar.setImage(UIImage(systemName: "star"), for: .normal)
+            imageStar.setImage(UIImage(systemName: "bookmark"), for: .normal)
                }
     }
     
@@ -43,9 +43,9 @@ class ModelsCell: UITableViewCell {
     func configure(for product: Product) {
         modelLabel.text = product.model
         if product.isFavorite {
-            imageStar.imageView?.image = UIImage(systemName: "star.fill")
+            imageStar.imageView?.image = UIImage(systemName: "bookmark.fill")
         } else {
-            imageStar.imageView?.image = UIImage(systemName: "star")
+            imageStar.imageView?.image = UIImage(systemName: "bookmark")
         }
         currentProduct = product
     }

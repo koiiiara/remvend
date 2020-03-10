@@ -23,7 +23,9 @@
 		094839C023ED551600B72279 /* FavouritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094839BF23ED551600B72279 /* FavouritesVC.swift */; };
 		094839C223ED575100B72279 /* FavouriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094839C123ED575100B72279 /* FavouriteCell.swift */; };
 		094839C423ED719600B72279 /* ConfigureNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094839C323ED719500B72279 /* ConfigureNavigationController.swift */; };
+		095C191223F17482008BA100 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C191123F17482008BA100 /* AboutVC.swift */; };
 		0962650E23E9EC43008609C4 /* ClearCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0962650D23E9EC43008609C4 /* ClearCache.swift */; };
+		096D4BC123F1B3E80077E81D /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D4BC023F1B3E80077E81D /* ContactsVC.swift */; };
 		097B5D3823D99D820055219E /* MachinesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B5D3723D99D820055219E /* MachinesVC.swift */; };
 		09A8E9C323D6F9BA0031BE3E /* BaseURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A8E9C223D6F9BA0031BE3E /* BaseURLs.swift */; };
 		09A8E9CB23D7092B0031BE3E /* MainPDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A8E9CA23D7092B0031BE3E /* MainPDFViewController.swift */; };
@@ -67,7 +69,9 @@
 		094839BF23ED551600B72279 /* FavouritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesVC.swift; sourceTree = "<group>"; };
 		094839C123ED575100B72279 /* FavouriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FavouriteCell.swift; path = "Rem Vend/ViewControllers/FavouriteCell.swift"; sourceTree = SOURCE_ROOT; };
 		094839C323ED719500B72279 /* ConfigureNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureNavigationController.swift; sourceTree = "<group>"; };
+		095C191123F17482008BA100 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		0962650D23E9EC43008609C4 /* ClearCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearCache.swift; sourceTree = "<group>"; };
+		096D4BC023F1B3E80077E81D /* ContactsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
 		097B5D3723D99D820055219E /* MachinesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachinesVC.swift; sourceTree = "<group>"; };
 		09A8E9C223D6F9BA0031BE3E /* BaseURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURLs.swift; sourceTree = "<group>"; };
 		09A8E9CA23D7092B0031BE3E /* MainPDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPDFViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 				094839BF23ED551600B72279 /* FavouritesVC.swift */,
 				09A8E9CA23D7092B0031BE3E /* MainPDFViewController.swift */,
 				093F87B623A67217003B6153 /* SecondViewController.swift */,
+				095C191123F17482008BA100 /* AboutVC.swift */,
+				096D4BC023F1B3E80077E81D /* ContactsVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -351,6 +357,7 @@
 				09ECE38323EB39F700DF8960 /* InstantPanGestureRecognizer.swift in Sources */,
 				094801E623E9FEEA00ED2804 /* PaymentVC.swift in Sources */,
 				09ECE38623EB39F700DF8960 /* PresentAnimation.swift in Sources */,
+				096D4BC123F1B3E80077E81D /* ContactsVC.swift in Sources */,
 				09ECE38523EB39F700DF8960 /* DimmPresentationController.swift in Sources */,
 				09ECE38A23EC3E0C00DF8960 /* MenuTableViewCell.swift in Sources */,
 				09CB794723EAC393002626AF /* PaymentCardVC.swift in Sources */,
@@ -364,6 +371,7 @@
 				091C2BCF23BCA8DC005C727F /* Vendors.swift in Sources */,
 				09ECE38223EB39F700DF8960 /* PanelTransition.swift in Sources */,
 				09ECE38823EB39F700DF8960 /* TransitionDirection.swift in Sources */,
+				095C191223F17482008BA100 /* AboutVC.swift in Sources */,
 				09ECE38123EB39F700DF8960 /* CGPoint+Velocity.swift in Sources */,
 				094839C023ED551600B72279 /* FavouritesVC.swift in Sources */,
 				094839C423ED719600B72279 /* ConfigureNavigationController.swift in Sources */,
@@ -523,7 +531,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -544,7 +552,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -19,14 +19,22 @@ enum VendorName: String {
     case bianchi = "Bianchi"
     case fas = "FAS"
     case rheavendors = "Rheavendors"
+    case crane = "Crane"
+    case jofemar = "Jofemar"
     
     //MARK:  Payment Systems
     case paytech = "PayTech"
     case mei = "MEI"
-    case coinco = "Coinco"
+    case coinco = "CoinCo"
     case vendotek = "Vendotek"
     case pax = "PAX"
     case nri = "NRI"
+    case cashcode = "CashCode"
+    case gpt = "GPT"
+    case ict = "ICT"
+    case itl = "ITL"
+    case jcm = "JCM"
+    
     
     //MARK: Coffee Machines
     case delonghi = "Delonghi"
@@ -35,6 +43,7 @@ enum VendorName: String {
     
     //MARK: Telemetry
     case telemetron = "Telemetron"
+    case ephor = "Эфор"
 }
 
 //extension VendorName: CustomStringConvertible {

@@ -15,10 +15,12 @@ class MenuTableViewCell: UITableViewCell {
   
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        backgroundColor = .none
         contentView.heightAnchor.constraint(equalToConstant: 64).isActive = true
-        contentView.backgroundColor = #colorLiteral(red: 0.2352941176, green: 0.3803921569, blue: 0.3803921569, alpha: 1)
+        self.selectionStyle = .default
+        
         //text position
-        addSubview(label)
+        contentView.addSubview(label)
         //label.textAlignment = .right
         label.topAnchor.constraint(equalTo: topAnchor, constant: 8).isActive = true
         label.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8).isActive = true
@@ -26,16 +28,16 @@ class MenuTableViewCell: UITableViewCell {
         label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32).isActive = true
         label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32).isActive = true
         //label.heightAnchor.constraint(equalToConstant: 128).isActive = true
-        label.font = UIFont.systemFont(ofSize: 16)
+        label.font = UIFont.systemFont(ofSize: 17)
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 2
         label.textColor = .white
         //label.textColor = .secondaryLabel
         let separator = UIView()
-        addSubview(separator)
+        contentView.addSubview(separator)
         
         //seprator position
-        separator.backgroundColor =  #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        separator.backgroundColor =  .white
         //#colorLiteral(red: 0.08744991571, green: 0.7839367986, blue: 0.7748929858, alpha: 1)
         separator.translatesAutoresizingMaskIntoConstraints = false
         separator.heightAnchor.constraint(equalToConstant: 1).isActive = true
@@ -54,10 +56,18 @@ class MenuTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
  
+    
+//    override func setSelected(_ selected: Bool, animated: Bool) {
+//        super.setSelected(selected, animated: animated)
+//
+//        // Configure the view for the selected state
+//    }
    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-    if selected {contentView.backgroundColor = #colorLiteral(red: 0.2352941176, green: 0.3803921569, blue: 0.3803921569, alpha: 0.7697988014)
-    } else { contentView.backgroundColor = #colorLiteral(red: 0.2352941176, green: 0.3803921569, blue: 0.3803921569, alpha: 1) }
-        // Configure the view for the selected state
+    if selected {
+    } else {
     }
+    }
+    
+    
 }

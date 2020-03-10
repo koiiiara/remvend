@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,16 +12,16 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Rem_Vend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="scrollableAxes" bouncesZoom="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="EXF-dc-ATX">
-                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wq2-Ym-X6b">
                                         <rect key="frame" x="16" y="16" width="343" height="80"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book-Open_200w" translatesAutoresizingMaskIntoConstraints="NO" id="Y3Q-Au-yLr">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="freestanding" translatesAutoresizingMaskIntoConstraints="NO" id="Y3Q-Au-yLr">
                                                 <rect key="frame" x="16" y="8" width="48" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="2G6-SD-fRb"/>
@@ -52,8 +52,9 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RDF-pe-KFU">
                                         <rect key="frame" x="16" y="112" width="343" height="80"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Payment_200w" translatesAutoresizingMaskIntoConstraints="NO" id="mI2-33-m4E">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="atm" translatesAutoresizingMaskIntoConstraints="NO" id="mI2-33-m4E">
                                                 <rect key="frame" x="16" y="8" width="48" height="64"/>
+                                                <color key="tintColor" red="0.1333333333" green="0.69803921570000005" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="EXe-oc-3sf"/>
                                                     <constraint firstAttribute="width" constant="48" id="hD1-vZ-wxP"/>
@@ -83,8 +84,9 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cot-Qc-AXZ">
                                         <rect key="frame" x="16" y="208" width="343" height="80"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Meter_200w" translatesAutoresizingMaskIntoConstraints="NO" id="dxv-pL-AMB">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pressure" translatesAutoresizingMaskIntoConstraints="NO" id="dxv-pL-AMB">
                                                 <rect key="frame" x="16" y="8" width="48" height="64"/>
+                                                <color key="tintColor" red="0.1333333333" green="0.69803921570000005" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="48" id="1hY-E5-r43"/>
                                                     <constraint firstAttribute="height" constant="64" id="VSp-SZ-fr3"/>
@@ -147,7 +149,7 @@
                         <barButtonItem key="backBarButtonItem" title="Назад" id="VVp-YQ-q8c"/>
                         <barButtonItem key="rightBarButtonItem" image="line.horizontal.3" catalog="system" width="64" id="qie-c2-s2g">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oc7-6B-Bd4">
-                                <rect key="frame" x="312.66666666666669" y="0.0" width="46.333333333333314" height="44"/>
+                                <rect key="frame" x="312.5" y="0.0" width="46.5" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="16" maxY="0.0"/>
@@ -199,13 +201,13 @@
             <objects>
                 <viewController id="fx5-gO-c6Y" customClass="PaymentVC" customModule="Rem_Vend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xt4-8l-fZK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HvT-bh-wRV">
-                                <rect key="frame" x="16" y="104" width="343" height="80"/>
+                                <rect key="frame" x="16" y="60" width="343" height="80"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book-Open_200w" translatesAutoresizingMaskIntoConstraints="NO" id="qUa-dj-oZm">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="money" translatesAutoresizingMaskIntoConstraints="NO" id="qUa-dj-oZm">
                                         <rect key="frame" x="16" y="8" width="48" height="64"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="64" id="IVq-7i-Xlu"/>
@@ -234,9 +236,9 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gga-B1-UiX">
-                                <rect key="frame" x="16" y="200" width="343" height="80"/>
+                                <rect key="frame" x="16" y="156" width="343" height="80"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scale_200w" translatesAutoresizingMaskIntoConstraints="NO" id="hfU-9s-13X">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollar" translatesAutoresizingMaskIntoConstraints="NO" id="hfU-9s-13X">
                                         <rect key="frame" x="16" y="8" width="48" height="64"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="64" id="IQk-nA-DIe"/>
@@ -265,9 +267,9 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNJ-U3-4Hf">
-                                <rect key="frame" x="16" y="296" width="343" height="80"/>
+                                <rect key="frame" x="16" y="252" width="343" height="80"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Data-Down_200w" translatesAutoresizingMaskIntoConstraints="NO" id="SUE-RV-vBm">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="credit-card" translatesAutoresizingMaskIntoConstraints="NO" id="SUE-RV-vBm">
                                         <rect key="frame" x="16" y="8" width="48" height="64"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="64" id="jFN-8P-DIg"/>
@@ -336,18 +338,479 @@
             </objects>
             <point key="canvasLocation" x="2398" y="-1199"/>
         </scene>
+        <!--About-->
+        <scene sceneID="ycO-kd-lzv">
+            <objects>
+                <viewController storyboardIdentifier="About" id="CJa-pY-BjK" userLabel="About" customClass="AboutVC" customModule="Rem_Vend" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I3f-Wg-G1W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ed6-rO-gOQ">
+                                <rect key="frame" x="16" y="64" width="343" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="iSE-XB-KoX"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wVl-d8-NLM">
+                                <rect key="frame" x="32" y="208" width="311" height="443"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">С технической точки зрения вы всегда должны держать свои вендинг аппараты и кофемашины в исправном состоянии, чтобы они работали с максимальной эффективностью.
+
+У нас на складе всегда в наличии новые и восстановленные рабочие запасные части для большинства марок и моделей кофейных и снековых аппаратов.
+
+Наша миссия – стать для вас Сервисом №1 по техническому обслуживанию и ремонту вендингового оборудования. У нас работают лучшие мастера по ремонту вендингового оборудования.
+
+Мы также осуществляем техническую поддержку по телефону.
+
+Мы будем добиваться этой цели путем предоставления высокого уровня качества обслуживания наших клиентов. Будь то на месте установки торгового аппарата или оказание технической помощи по телефону.
+
+Если вы из другого города и нет возможности подъехать нашему специалисту  для ремонта вашего оборудования. Мы всегда можем диагностировать проблему удаленно по телефону, Viber или Skype. Таким образом, вы получите готовое решение вашей проблемы. Также вы можете заказать у нас запасные части для устранения выявленной неисправности.
+
+В большинстве случаев удаленно мы можем диагностировать проблему с вашим аппаратом на 100%.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZ1-MG-wdP">
+                                <rect key="frame" x="32" y="32" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="qWr-Qz-gty"/>
+                                    <constraint firstAttribute="width" constant="32" id="r36-7k-Wee"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" red="0.1333333333" green="0.69803921570000005" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="multiply.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" scale="default" weight="regular"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButton:" destination="CJa-pY-BjK" eventType="touchUpInside" id="2Bk-aB-Qa3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XZ1-MG-wdP" firstAttribute="top" secondItem="ivk-QY-LoR" secondAttribute="top" constant="32" id="R4o-h6-fAn"/>
+                            <constraint firstItem="wVl-d8-NLM" firstAttribute="top" secondItem="ed6-rO-gOQ" secondAttribute="bottom" constant="16" id="Rl2-hF-fkD"/>
+                            <constraint firstItem="XZ1-MG-wdP" firstAttribute="leading" secondItem="ivk-QY-LoR" secondAttribute="leading" constant="32" id="VoW-h4-0ve"/>
+                            <constraint firstAttribute="bottom" secondItem="wVl-d8-NLM" secondAttribute="bottom" constant="16" id="ZWk-UO-oLE"/>
+                            <constraint firstItem="wVl-d8-NLM" firstAttribute="leading" secondItem="ivk-QY-LoR" secondAttribute="leading" constant="32" id="iU4-Ya-x2l"/>
+                            <constraint firstItem="ed6-rO-gOQ" firstAttribute="top" secondItem="XZ1-MG-wdP" secondAttribute="bottom" id="j9O-Ex-cXy"/>
+                            <constraint firstItem="ed6-rO-gOQ" firstAttribute="leading" secondItem="ivk-QY-LoR" secondAttribute="leading" constant="16" id="s5I-a0-CO1"/>
+                            <constraint firstItem="ivk-QY-LoR" firstAttribute="trailing" secondItem="wVl-d8-NLM" secondAttribute="trailing" constant="32" id="vKz-mO-v1x"/>
+                            <constraint firstItem="ivk-QY-LoR" firstAttribute="trailing" secondItem="ed6-rO-gOQ" secondAttribute="trailing" constant="16" id="yHe-wa-7sw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ivk-QY-LoR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VxZ-Vg-ija"/>
+                    <connections>
+                        <outlet property="closeButton" destination="XZ1-MG-wdP" id="M3I-MK-7gz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HJC-Dh-zft" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3100" y="-1626"/>
+        </scene>
+        <!--Policy-->
+        <scene sceneID="cAo-OH-Mhw">
+            <objects>
+                <viewController storyboardIdentifier="Policy" id="xx6-W5-BXm" userLabel="Policy" customClass="AboutVC" customModule="Rem_Vend" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VMG-oc-QZP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eer-kc-r9n">
+                                <rect key="frame" x="32" y="32" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="g44-46-4R2"/>
+                                    <constraint firstAttribute="height" constant="32" id="isx-aT-gDc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" red="0.1333333333" green="0.69803921570000005" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="multiply.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" scale="default" weight="regular"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButton:" destination="xx6-W5-BXm" eventType="touchUpInside" id="gTR-Nr-lNg"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3fx-K1-pJ6">
+                                <rect key="frame" x="16" y="102.5" width="343" height="548.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации, которую сайт https://remvend.ru, (далее – Сайт) расположенный на доменном имени (а также его субдоменах), может получить о Пользователе во время использования сайта (а также его субдоменов), его программ и его продуктов.
+
+1. Определение терминов
+
+1.1 В настоящей Политике конфиденциальности используются следующие термины:
+
+1.1.1. «Администрация сайта» (далее – Администрация) – уполномоченные сотрудники на управление сайтом https://remvend.ru, организуют и (или) осуществляют обработку персональных данных, а также определяет цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.
+
+1.1.2. «Персональные данные» – любая информация, относящаяся к прямо или косвенно определенному, или определяемому физическому лицу (субъекту персональных данных).
+
+1.1.3. «Обработка персональных данных» – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.
+
+1.1.4. «Конфиденциальность персональных данных» – обязательное для соблюдения Оператором или иным получившим доступ к персональным данным лицом требование не допускать их распространения без согласия субъекта персональных данных или наличия иного законного основания.
+
+1.1.5. «Сайт https://remvend.ru» – это совокупность связанных между собой веб-страниц, размещенных в сети Интернет по уникальному адресу (URL): https://remvend.ru, а также его субдоменах.
+
+1.1.6. «Субдомены» – это страницы или совокупность страниц, расположенные на доменах третьего уровня, принадлежащие сайту https://remvend.ru, а также другие временные страницы, внизу который указана контактная информация Администрации.
+
+1.1.5. «Пользователь сайта https://remvend.ru» (далее Пользователь) – лицо, имеющее доступ к сайту https://remvend.ru, посредством сети Интернет и использующее информацию, материалы и продукты сайта https://remvend.ru.
+
+1.1.7. «Cookies» — небольшой фрагмент данных, отправленный веб-сервером и хранимый на компьютере пользователя, который веб-клиент или веб-браузер каждый раз пересылает веб-серверу в HTTP-запросе при попытке открыть страницу соответствующего сайта.
+
+1.1.8. «IP-адрес» — уникальный сетевой адрес узла в компьютерной сети, через который Пользователь получает доступ на Сайт.
+
+1.1.9. «Услуги, товар» – которые Пользователь заказывает на сайте и оплачивает через платёжные системы.
+
+2. Общие положения
+
+2.1. Использование сайта https://remvend.ru Пользователем означает согласие с настоящей Политикой конфиденциальности и условиями обработки персональных данных Пользователя.
+
+2.2. В случае несогласия с условиями Политики конфиденциальности Пользователь должен прекратить использование сайта https://remvend.ru.
+
+2.3. Настоящая Политика конфиденциальности применяется к сайту https://remvend.ru. Сайт не контролирует и не несет ответственность за сайты третьих лиц, на которые Пользователь может перейти по ссылкам, доступным на сайте https://remvend.ru.
+
+2.4. Администрация не проверяет достоверность персональных данных, предоставляемых Пользователем.
+
+3. Предмет политики конфиденциальности
+
+3.1. Настоящая Политика конфиденциальности устанавливает обязательства Администрации по неразглашению и обеспечению режима защиты конфиденциальности персональных данных, которые Пользователь предоставляет по запросу Администрации при регистрации на сайте https://remvend.ru, при подписке на информационную e-mail рассылку или при оформлении заказа.
+
+3.2. Персональные данные, разрешённые к обработке в рамках настоящей Политики конфиденциальности, предоставляются Пользователем путём заполнения форм на сайте https://remvend.ru и включают в себя следующую информацию:
+
+3.2.1. фамилию, имя, отчество Пользователя;
+
+3.2.2. контактный телефон Пользователя;
+
+3.2.3. адрес электронной почты (e-mail);
+
+3.2.4. место жительство Пользователя (при необходимости);
+
+3.2.5. адрес доставки Товара (при необходимости);
+
+3.2.6. фотографию (при необходимости).
+
+3.3. Сайт защищает Данные, которые автоматически передаются при посещении страниц:
+
+– IP адрес;
+
+– информация из cookies;
+
+– информация о браузере
+
+– время доступа;
+
+– реферер (адрес предыдущей страницы).
+
+3.3.1. Отключение cookies может повлечь невозможность доступа к частям сайта, требующим авторизации.
+
+3.3.2. Сайт осуществляет сбор статистики об IP-адресах своих посетителей. Данная информация используется с целью предотвращения, выявления и решения технических проблем.
+
+3.4. Любая иная персональная информация неоговоренная выше (история посещения, используемые браузеры, операционные системы и т.д.) подлежит надежному хранению и нераспространению, за исключением случаев, предусмотренных в п.п. 5.2. и 5.3. настоящей Политики конфиденциальности.
+
+4. Цели сбора персональной информации пользователя
+
+4.1. Персональные данные Пользователя Администрация может использовать в целях:
+
+4.1.1. Идентификации Пользователя, зарегистрированного на сайте www.firmalex.ru для его дальнейшей авторизации, оформления заказа и других действий.
+
+4.1.2. Предоставления Пользователю доступа к персонализированным данным сайта https://remvend.ru.
+
+4.1.3. Установления с Пользователем обратной связи, включая направление уведомлений, запросов, касающихся использования сайта www.firmalex.ru, оказания услуг и обработки запросов и заявок от Пользователя.
+
+4.1.4. Определения места нахождения Пользователя для обеспечения безопасности, предотвращения мошенничества.
+
+4.1.5. Подтверждения достоверности и полноты персональных данных, предоставленных Пользователем.
+
+4.1.6. Создания учетной записи для использования частей сайта www.firmalex.ru, если Пользователь дал согласие на создание учетной записи.
+
+4.1.7. Уведомления Пользователя по электронной почте.
+
+4.1.8. Предоставления Пользователю эффективной технической поддержки при возникновении проблем, связанных с использованием сайта https://remvend.ru.
+
+4.1.9. Предоставления Пользователю с его согласия специальных предложений, информации о ценах, новостной рассылки и иных сведений от имени сайта https://remvend.ru.
+
+4.1.10. Осуществления рекламной деятельности с согласия Пользователя.
+
+5. Способы и сроки обработки персональной информации
+
+5.1. Обработка персональных данных Пользователя осуществляется без ограничения срока, любым законным способом, в том числе в информационных системах персональных данных с использованием средств автоматизации или без использования таких средств.
+
+5.2. Пользователь соглашается с тем, что Администрация вправе передавать персональные данные третьим лицам, в частности, курьерским службам, организациями почтовой связи (в том числе электронной), операторам электросвязи, исключительно в целях выполнения заказа Пользователя, оформленного на сайте https://remvend.ru, включая доставку Товара, документации или e-mail сообщений.
+
+5.3. Персональные данные Пользователя могут быть переданы уполномоченным органам государственной власти Российской Федерации только по основаниям и в порядке, установленным законодательством Российской Федерации.
+
+5.4. При утрате или разглашении персональных данных Администрация вправе не информировать Пользователя об утрате или разглашении персональных данных.
+
+5.5. Администрация принимает необходимые организационные и технические меры для защиты персональной информации Пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий третьих лиц.
+
+5.6. Администрация совместно с Пользователем принимает все необходимые меры по предотвращению убытков или иных отрицательных последствий, вызванных утратой или разглашением персональных данных Пользователя.
+
+6. Права и обязанности сторон
+
+6.1. Пользователь вправе:
+
+6.1.1. Принимать свободное решение о предоставлении своих персональных данных, необходимых для использования сайта https://remvend.ru, и давать согласие на их обработку.
+
+6.1.2. Обновить, дополнить предоставленную информацию о персональных данных в случае изменения данной информации.
+
+6.1.3. Пользователь имеет право на получение у Администрации информации, касающейся обработки его персональных данных, если такое право не ограничено в соответствии с федеральными законами. Пользователь вправе требовать от Администрации уточнения его персональных данных, их блокирования или уничтожения в случае, если персональные данные являются неполными, устаревшими, неточными, незаконно полученными или не являются необходимыми для заявленной цели обработки, а также принимать предусмотренные законом меры по защите своих прав.
+
+6.2. Администрация обязана:
+
+6.2.1. Использовать полученную информацию исключительно для целей, указанных в п. 4 настоящей Политики конфиденциальности.
+
+6.2.2. Обеспечить хранение конфиденциальной информации в тайне, не разглашать без предварительного письменного разрешения Пользователя, а также не осуществлять продажу, обмен, опубликование, либо разглашение иными возможными способами переданных персональных данных Пользователя, за исключением п.п. 5.2 и 5.3. настоящей Политики Конфиденциальности.
+
+6.2.3. Принимать меры предосторожности для защиты конфиденциальности персональных данных Пользователя согласно порядку, обычно используемого для защиты такого рода информации в существующем деловом обороте.
+
+6.2.4. Осуществить блокирование персональных данных, относящихся к соответствующему Пользователю, с момента обращения или запроса Пользователя, или его законного представителя либо уполномоченного органа по защите прав субъектов персональных данных на период проверки, в случае выявления недостоверных персональных данных или неправомерных действий.
+
+7. Ответственность сторон
+
+7.1. Администрация, не исполнившая свои обязательства, несёт ответственность за убытки, понесённые Пользователем в связи с неправомерным использованием персональных данных, в соответствии с законодательством Российской Федерации, за исключением случаев, предусмотренных п.п. 5.2., 5.3. и 7.2. настоящей Политики Конфиденциальности.
+
+7.2. В случае утраты или разглашения Конфиденциальной информации Администрация не несёт ответственность, если данная конфиденциальная информация:
+
+7.2.1. Стала публичным достоянием до её утраты или разглашения.
+
+7.2.2. Была получена от третьей стороны до момента её получения Администрацией Ресурса.
+
+7.2.3. Была разглашена с согласия Пользователя.
+
+7.3. Пользователь несет полную ответственность за соблюдение требований законодательства РФ, в том числе законов о рекламе, о защите авторских и смежных прав, об охране товарных знаков и знаков обслуживания, но не ограничиваясь перечисленным, включая полную ответственность за содержание и форму материалов.
+
+7.4. Пользователь признает, что ответственность за любую информацию (в том числе, но не ограничиваясь: файлы с данными, тексты и т. д.), к которой он может иметь доступ как к части сайта https://remvend.ru, несет лицо, предоставившее такую информацию.
+
+7.5. Пользователь соглашается, что информация, предоставленная ему как часть сайта https://remvend.ru, может являться объектом интеллектуальной собственности, права на который защищены и принадлежат другим Пользователям, партнерам или рекламодателям, которые размещают такую информацию на сайте www.firmalex.ru. Пользователь не вправе вносить изменения, передавать в аренду, передавать на условиях займа, продавать, распространять или создавать производные работы на основе такого Содержания (полностью или в части), за исключением случаев, когда такие действия были письменно прямо разрешены собственниками такого Содержания в соответствии с условиями отдельного соглашения.
+
+7.6. В отношение текстовых материалов (статей, публикаций, находящихся в свободном публичном доступе на сайте https://remvend.ru) допускается их распространение при условии, что будет дана ссылка на Сайт.
+
+7.7. Администрация не несет ответственности перед Пользователем за любой убыток или ущерб, понесенный Пользователем в результате удаления, сбоя или невозможности сохранения какого-либо Содержания и иных коммуникационных данных, содержащихся на сайте https://remvend.ru или передаваемых через него.
+
+7.8. Администрация не несет ответственности за любые прямые или косвенные убытки, произошедшие из-за: использования либо невозможности использования сайта, либо отдельных сервисов; несанкционированного доступа к коммуникациям Пользователя; заявления или поведение любого третьего лица на сайте.
+
+7.9. Администрация не несет ответственность за какую-либо информацию, размещенную пользователем на сайте https://remvend.ru, включая, но не ограничиваясь: информацию, защищенную авторским правом, без прямого согласия владельца авторского права.
+
+8. Разрешение споров
+
+8.1. До обращения в суд с иском по спорам, возникающим из отношений между Пользователем и Администрацией, обязательным является предъявление претензии (письменного предложения или предложения в электронном виде о добровольном урегулировании спора).
+
+8.2. Получатель претензии в течение 30 календарных дней со дня получения претензии, письменно или в электронном виде уведомляет заявителя претензии о результатах рассмотрения претензии.
+
+8.3. При не достижении соглашения спор будет передан для разрешения в соответствующий суд по месту нахождения Ответчика.
+
+8.4. К настоящей Политике конфиденциальности и отношениям между Пользователем и Администрацией применяется действующее законодательство Российской Федерации.
+
+9. Дополнительные условия
+
+9.1. Администрация вправе вносить изменения в настоящую Политику конфиденциальности без согласия Пользователя.
+
+9.2. Новая Политика конфиденциальности вступает в силу с момента ее размещения на сайте https://remvend.ru, если иное не предусмотрено новой редакцией Политики конфиденциальности.
+
+9.3. Все предложения или вопросы касательно настоящей Политики конфиденциальности следует сообщать по адресу: info@remvend.ru
+
+9.4. Действующая Политика конфиденциальности размещена на странице по адресу https://remvend.ru/privacy-policy.
+
+Обновлено: 01 января 2020 года
+
+г. Москва</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Политика конфиденциальности персональных данных" lineBreakMode="clip" numberOfLines="3" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqS-8e-zk0">
+                                <rect key="frame" x="89" y="48" width="254" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MqS-8e-zk0" secondAttribute="trailing" constant="32" id="13G-gi-vZA"/>
+                            <constraint firstAttribute="bottom" secondItem="3fx-K1-pJ6" secondAttribute="bottom" constant="16" id="3Zr-qu-KhM"/>
+                            <constraint firstItem="eer-kc-r9n" firstAttribute="leading" secondItem="oyy-Fe-ZA0" secondAttribute="leading" constant="32" id="3xh-Ew-coU"/>
+                            <constraint firstItem="oyy-Fe-ZA0" firstAttribute="trailing" secondItem="3fx-K1-pJ6" secondAttribute="trailing" constant="16" id="6Nc-aD-Hk1"/>
+                            <constraint firstItem="MqS-8e-zk0" firstAttribute="leading" secondItem="eer-kc-r9n" secondAttribute="trailing" constant="25" id="91e-Ge-ifx"/>
+                            <constraint firstItem="3fx-K1-pJ6" firstAttribute="top" secondItem="MqS-8e-zk0" secondAttribute="bottom" constant="16" id="J6Z-do-SpL"/>
+                            <constraint firstItem="3fx-K1-pJ6" firstAttribute="leading" secondItem="oyy-Fe-ZA0" secondAttribute="leading" constant="16" id="fYe-t8-7QT"/>
+                            <constraint firstItem="MqS-8e-zk0" firstAttribute="top" secondItem="oyy-Fe-ZA0" secondAttribute="top" constant="48" id="gka-EX-KiZ"/>
+                            <constraint firstItem="eer-kc-r9n" firstAttribute="top" secondItem="oyy-Fe-ZA0" secondAttribute="top" constant="32" id="yEn-ui-P30"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oyy-Fe-ZA0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xVp-hX-qrI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2247.1999999999998" y="-1625.615763546798"/>
+        </scene>
+        <!--ContactsVC-->
+        <scene sceneID="dIk-Pr-6yJ">
+            <objects>
+                <viewController storyboardIdentifier="Contacts" id="4aQ-5E-037" customClass="ContactsVC" customModule="Rem_Vend" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EbM-bS-QaE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qMK-b0-1VW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="420" id="uaA-WW-oPq"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Uza-6v-p18" appends="YES" id="5Zb-N9-SIC"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWd-B4-TLI">
+                                <rect key="frame" x="32" y="32" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="LaC-f8-pUp"/>
+                                    <constraint firstAttribute="height" constant="32" id="aU4-rN-8im"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" red="0.1333333333" green="0.69803921570000005" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="multiply.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" scale="default" weight="regular"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButton:" destination="4aQ-5E-037" eventType="touchUpInside" id="ICp-Xt-UMm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RemVend" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlT-fS-DdP">
+                                <rect key="frame" x="32" y="436" width="311" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Москва, Амурская улица, 2с2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzl-YO-6ji">
+                                <rect key="frame" x="32" y="476" width="311" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="VU7-bV-s80"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrf-GV-fG1">
+                                <rect key="frame" x="32" y="504" width="311" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="dBv-M8-MsN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" red="0.1333333333" green="0.69803921570000005" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title=" Построить маршрут" image="mappin.and.ellipse" catalog="system">
+                                    <color key="titleColor" red="0.1333333333" green="0.69803921570000005" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
+                                </state>
+                                <connections>
+                                    <action selector="longPrassOnMap:" destination="4aQ-5E-037" eventType="touchUpInside" id="JGD-Np-7i0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLu-EH-3ZI">
+                                <rect key="frame" x="32" y="538" width="311" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="NON-Lv-mfi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" red="0.1333333333" green="0.69803921570000005" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title=" https://remvend.ru" image="link" catalog="system">
+                                    <color key="titleColor" red="0.1333333333" green="0.69803921570000005" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
+                                </state>
+                                <connections>
+                                    <action selector="siteButton:" destination="4aQ-5E-037" eventType="touchUpInside" id="wPs-dw-TDW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeJ-Ls-E1j">
+                                <rect key="frame" x="32" y="572" width="311" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="O0N-mU-Ulj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" red="0.1333333333" green="0.69803921570000005" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title=" info@remvend.ru" image="envelope" catalog="system">
+                                    <color key="titleColor" red="0.1333333333" green="0.69803921570000005" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
+                                </state>
+                                <connections>
+                                    <action selector="mailButton:" destination="4aQ-5E-037" eventType="touchUpInside" id="244-kB-1nm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saI-Qb-RTf">
+                                <rect key="frame" x="32" y="610" width="311" height="48"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="Nel-Ol-hUF"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="czB-c4-D9s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title=" Позвонить" image="phone.circle" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="medium"/>
+                                </state>
+                                <connections>
+                                    <action selector="callButtonAction:" destination="4aQ-5E-037" eventType="touchUpInside" id="WxE-04-vi8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cUs-Re-fVC" firstAttribute="trailing" secondItem="mlT-fS-DdP" secondAttribute="trailing" constant="32" id="1eI-Dh-ULf"/>
+                            <constraint firstItem="cUs-Re-fVC" firstAttribute="trailing" secondItem="mrf-GV-fG1" secondAttribute="trailing" constant="32" id="3BF-PK-72W"/>
+                            <constraint firstItem="mlT-fS-DdP" firstAttribute="top" secondItem="qMK-b0-1VW" secondAttribute="bottom" constant="16" id="BIw-um-zMc"/>
+                            <constraint firstItem="cUs-Re-fVC" firstAttribute="trailing" secondItem="saI-Qb-RTf" secondAttribute="trailing" constant="32" id="CrA-Fn-3OR"/>
+                            <constraint firstItem="rzl-YO-6ji" firstAttribute="leading" secondItem="cUs-Re-fVC" secondAttribute="leading" constant="32" id="JFI-D1-C3U"/>
+                            <constraint firstItem="saI-Qb-RTf" firstAttribute="top" secondItem="eeJ-Ls-E1j" secondAttribute="bottom" constant="16" id="Lfl-eG-Kju"/>
+                            <constraint firstItem="cLu-EH-3ZI" firstAttribute="leading" secondItem="cUs-Re-fVC" secondAttribute="leading" constant="32" id="RFa-cA-rcd"/>
+                            <constraint firstItem="qMK-b0-1VW" firstAttribute="leading" secondItem="cUs-Re-fVC" secondAttribute="leading" id="ScI-ec-WFv"/>
+                            <constraint firstItem="qMK-b0-1VW" firstAttribute="top" secondItem="cUs-Re-fVC" secondAttribute="top" id="TT8-cX-PFU"/>
+                            <constraint firstItem="cLu-EH-3ZI" firstAttribute="top" secondItem="mrf-GV-fG1" secondAttribute="bottom" constant="12" id="Wrj-YC-nuG"/>
+                            <constraint firstItem="saI-Qb-RTf" firstAttribute="leading" secondItem="cUs-Re-fVC" secondAttribute="leading" constant="32" id="Ys6-XW-way"/>
+                            <constraint firstItem="mrf-GV-fG1" firstAttribute="top" secondItem="rzl-YO-6ji" secondAttribute="bottom" constant="8" id="aN6-TW-FN8"/>
+                            <constraint firstItem="cUs-Re-fVC" firstAttribute="trailing" secondItem="eeJ-Ls-E1j" secondAttribute="trailing" constant="32" id="eYD-CS-ZbC"/>
+                            <constraint firstItem="eeJ-Ls-E1j" firstAttribute="top" secondItem="cLu-EH-3ZI" secondAttribute="bottom" constant="12" id="g5n-G8-Vhs"/>
+                            <constraint firstItem="BWd-B4-TLI" firstAttribute="top" secondItem="cUs-Re-fVC" secondAttribute="top" constant="32" id="hmJ-et-NuN"/>
+                            <constraint firstItem="eeJ-Ls-E1j" firstAttribute="leading" secondItem="cUs-Re-fVC" secondAttribute="leading" constant="32" id="kCw-zo-kLc"/>
+                            <constraint firstItem="cUs-Re-fVC" firstAttribute="trailing" secondItem="cLu-EH-3ZI" secondAttribute="trailing" constant="32" id="mtf-Sj-jaL"/>
+                            <constraint firstItem="mrf-GV-fG1" firstAttribute="leading" secondItem="cUs-Re-fVC" secondAttribute="leading" constant="32" id="sRM-ug-lxO"/>
+                            <constraint firstItem="rzl-YO-6ji" firstAttribute="top" secondItem="mlT-fS-DdP" secondAttribute="bottom" constant="16" id="v5T-tS-0ZW"/>
+                            <constraint firstItem="BWd-B4-TLI" firstAttribute="leading" secondItem="cUs-Re-fVC" secondAttribute="leading" constant="32" id="v8n-Sv-vz3"/>
+                            <constraint firstItem="cUs-Re-fVC" firstAttribute="trailing" secondItem="rzl-YO-6ji" secondAttribute="trailing" constant="32" id="w27-my-MJ1"/>
+                            <constraint firstItem="cUs-Re-fVC" firstAttribute="trailing" secondItem="qMK-b0-1VW" secondAttribute="trailing" id="wvR-sd-LC1"/>
+                            <constraint firstItem="mlT-fS-DdP" firstAttribute="leading" secondItem="cUs-Re-fVC" secondAttribute="leading" constant="32" id="yUI-19-B3C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cUs-Re-fVC"/>
+                    </view>
+                    <connections>
+                        <outlet property="callButtonView" destination="saI-Qb-RTf" id="woB-BK-r9k"/>
+                        <outlet property="mapView" destination="qMK-b0-1VW" id="UO1-gC-vry"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yid-jg-IE7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Uza-6v-p18">
+                    <connections>
+                        <action selector="longPrassOnMap:" destination="4aQ-5E-037" id="rpp-DJ-ITi"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1378.4000000000001" y="-1626.8365817091455"/>
+        </scene>
         <!--Выберите тип-->
         <scene sceneID="ixV-Y4-Et3">
             <objects>
                 <viewController id="uu7-QJ-NRS" customClass="MachinesVC" customModule="Rem_Vend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Zl-rk-Lyq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFU-Ez-3dx">
-                                <rect key="frame" x="16" y="104" width="343" height="80"/>
+                                <rect key="frame" x="16" y="60" width="343" height="80"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book-Open_200w" translatesAutoresizingMaskIntoConstraints="NO" id="RYx-S1-Etz">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="freestanding" translatesAutoresizingMaskIntoConstraints="NO" id="RYx-S1-Etz">
                                         <rect key="frame" x="16" y="8" width="48" height="64"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="64" id="D1J-BO-lbb"/>
@@ -376,9 +839,9 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oqd-Fs-RBj">
-                                <rect key="frame" x="16" y="200" width="343" height="80"/>
+                                <rect key="frame" x="16" y="156" width="343" height="80"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scale_200w" translatesAutoresizingMaskIntoConstraints="NO" id="h4p-au-fEc">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vending-machine" translatesAutoresizingMaskIntoConstraints="NO" id="h4p-au-fEc">
                                         <rect key="frame" x="16" y="8" width="48" height="64"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="64" id="PQE-Ij-4Ut"/>
@@ -407,9 +870,9 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rVZ-bb-jJu">
-                                <rect key="frame" x="16" y="296" width="343" height="80"/>
+                                <rect key="frame" x="16" y="252" width="343" height="80"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Data-Down_200w" translatesAutoresizingMaskIntoConstraints="NO" id="SLL-Vj-Sig">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee-machine" translatesAutoresizingMaskIntoConstraints="NO" id="SLL-Vj-Sig">
                                         <rect key="frame" x="16" y="8" width="48" height="64"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="64" id="BC4-iW-gZn"/>
@@ -483,7 +946,7 @@
             <objects>
                 <viewController id="37M-km-1RF" customClass="VendorsVC" customModule="Rem_Vend" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kKt-xm-fBX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
@@ -498,7 +961,7 @@
                                             <rect key="frame" x="16" y="8" width="343" height="56"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dy9-QA-U9L">
-                                                    <rect key="frame" x="147.66666666666666" y="16" width="48" height="24"/>
+                                                    <rect key="frame" x="147.5" y="16" width="48" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -551,11 +1014,11 @@
             <objects>
                 <viewController id="02l-lY-VIj" customClass="ModelsVC" customModule="Rem_Vend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rsl-OD-5d5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P3I-6f-oQX">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="FVy-9n-KRS" customClass="ModelsCell" customModule="Rem_Vend" customModuleProvider="target">
@@ -581,7 +1044,7 @@
                                                                 <constraint firstAttribute="width" constant="32" id="VkR-yU-7Q0"/>
                                                             </constraints>
                                                             <color key="tintColor" red="0.1333333333" green="0.69803921570000005" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <state key="normal" image="star" catalog="system"/>
+                                                            <state key="normal" image="bookmark" catalog="system"/>
                                                             <connections>
                                                                 <action selector="tapStar:" destination="FVy-9n-KRS" eventType="touchUpInside" id="ELY-rB-5ZG"/>
                                                             </connections>
@@ -646,17 +1109,17 @@
             <objects>
                 <viewController id="iZd-ZW-Ryz" customClass="ProductCardVC" customModule="Rem_Vend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sdj-jd-8Hs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="or2-eC-mdP">
-                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8v-kI-QZb">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="574"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_photo" translatesAutoresizingMaskIntoConstraints="NO" id="WGV-gh-ZjI">
-                                                <rect key="frame" x="59.666666666666657" y="32" width="255.99999999999997" height="256"/>
+                                                <rect key="frame" x="59.5" y="32" width="256" height="256"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="256" id="BAA-lV-bga"/>
                                                     <constraint firstAttribute="height" constant="256" id="qje-F3-zcx"/>
@@ -666,7 +1129,7 @@
                                                 <rect key="frame" x="16" y="304" width="343" height="56"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fU-VB-BoP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="163.66666666666666" height="56"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="163.5" height="56"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <color key="tintColor" red="0.1333333333" green="0.69803921570000005" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                                                         <state key="normal" title="Инструкция">
@@ -680,7 +1143,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUH-gf-K1N">
-                                                        <rect key="frame" x="179.66666666666663" y="0.0" width="163.33333333333337" height="56"/>
+                                                        <rect key="frame" x="179.5" y="0.0" width="163.5" height="56"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <state key="normal" title="Дозировки">
                                                             <color key="titleColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
@@ -707,16 +1170,16 @@
                                                 <rect key="frame" x="16" y="376" width="343" height="157"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUk-iD-zcy">
-                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="52.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="52.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Энергопотребление:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsm-up-4FL">
-                                                                <rect key="frame" x="16" y="8" width="167.66666666666666" height="36.333333333333336"/>
+                                                                <rect key="frame" x="16" y="8" width="168" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLC-CW-mJ0">
-                                                                <rect key="frame" x="215.66666666666666" y="17.666666666666686" width="111.33333333333334" height="17"/>
+                                                                <rect key="frame" x="216" y="18" width="111" height="17"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -731,16 +1194,16 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B6l-eA-BSR">
-                                                        <rect key="frame" x="0.0" y="52.333333333333371" width="343" height="52.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="52.5" width="343" height="52"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Размеры:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idv-cF-9dp">
-                                                                <rect key="frame" x="16" y="8" width="76.666666666666671" height="36.333333333333336"/>
+                                                                <rect key="frame" x="16" y="8" width="77" height="36"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9O-pj-zOa">
-                                                                <rect key="frame" x="124.66666666666664" y="8" width="202.33333333333337" height="36.333333333333336"/>
+                                                                <rect key="frame" x="125" y="8" width="202" height="36"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -757,16 +1220,16 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdZ-7x-dhR">
-                                                        <rect key="frame" x="0.0" y="104.66666666666661" width="343" height="52.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="104.5" width="343" height="52.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вес:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taN-L8-TFQ">
-                                                                <rect key="frame" x="15.999999999999996" y="8" width="34.666666666666657" height="36.333333333333336"/>
+                                                                <rect key="frame" x="16" y="8" width="34.5" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZZ-B6-rPI">
-                                                                <rect key="frame" x="82.666666666666671" y="8" width="244.33333333333331" height="36.333333333333336"/>
+                                                                <rect key="frame" x="82.5" y="8" width="244.5" height="36.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -837,17 +1300,17 @@
             <objects>
                 <viewController id="Q6s-uI-sLa" customClass="PaymentCardVC" customModule="Rem_Vend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ocL-G2-p8d">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOT-9C-P8t">
-                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="525"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s8s-kj-YMt">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="525"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_photo" translatesAutoresizingMaskIntoConstraints="NO" id="ETU-Km-cNi">
-                                                <rect key="frame" x="59.666666666666657" y="32" width="255.99999999999997" height="256"/>
+                                                <rect key="frame" x="59.5" y="32" width="256" height="256"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="256" id="PaV-T3-yGb"/>
                                                     <constraint firstAttribute="width" constant="256" id="ueJ-kf-30C"/>
@@ -923,15 +1386,15 @@
             <objects>
                 <viewController id="3Vb-Kw-Hzh" customClass="MainPDFViewController" customModule="Rem_Vend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VGS-ay-t5M">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8EB-wu-WCC">
-                                <rect key="frame" x="80" y="663" width="215" height="2"/>
+                                <rect key="frame" x="80" y="552" width="215" height="2"/>
                                 <color key="tintColor" red="0.1333333333" green="0.69803921570000005" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ожидание загрузки..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ws-nE-6JG">
-                                <rect key="frame" x="0.0" y="610.66666666666663" width="375" height="20.333333333333371"/>
+                                <rect key="frame" x="0.0" y="499.5" width="375" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -963,11 +1426,11 @@
             <objects>
                 <viewController id="kFi-gc-dLh" customClass="FavouritesVC" customModule="Rem_Vend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vrq-Af-YzA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H2V-ie-R1E">
-                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationLevel="1" indentationWidth="10" reuseIdentifier="FavouriteCell" editingAccessoryType="disclosureIndicator" id="oQF-Yg-36d" customClass="FavouriteCell" customModule="Rem_Vend" customModuleProvider="target">
@@ -1041,11 +1504,11 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Rem_Vend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Скоро тут будет форма заявки!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="0.0" y="363" width="375" height="86"/>
+                                <rect key="frame" x="0.0" y="290.5" width="375" height="86"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1065,7 +1528,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1470" y="688"/>
+            <point key="canvasLocation" x="1470" y="613"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -1095,7 +1558,7 @@
                     <tabBarItem key="tabBarItem" title="База знаний" image="Book-Shelf-128" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VpH-ek-d8s">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.12156862745098039" green="0.74509803921568629" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
@@ -1118,7 +1581,7 @@
                     <tabBarItem key="tabBarItem" title="Избранное" image="bookmark" catalog="system" id="TRC-V0-RoQ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zE1-7Z-IKt">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.1333333333" green="0.69803921570000005" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
@@ -1133,22 +1596,30 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Book-Open_200w" width="180" height="180"/>
         <image name="Book-Shelf-128" width="24" height="24"/>
-        <image name="Data-Down_200w" width="200" height="200"/>
         <image name="Engineer-128" width="23" height="25"/>
-        <image name="Meter_200w" width="200" height="200"/>
-        <image name="Payment_200w" width="200" height="200"/>
-        <image name="Scale_200w" width="200" height="200"/>
+        <image name="atm" width="512" height="512"/>
         <image name="bookmark" catalog="system" width="56" height="64"/>
+        <image name="coffee-machine" width="512" height="512"/>
+        <image name="credit-card" width="512" height="512"/>
+        <image name="dollar" width="512" height="512"/>
+        <image name="envelope" catalog="system" width="64" height="46"/>
+        <image name="freestanding" width="512" height="512"/>
         <image name="line.horizontal.3" catalog="system" width="64" height="32"/>
+        <image name="link" catalog="system" width="64" height="58"/>
+        <image name="logo" width="14416" height="6154"/>
+        <image name="mappin.and.ellipse" catalog="system" width="58" height="64"/>
+        <image name="money" width="512" height="512"/>
+        <image name="multiply.circle" catalog="system" width="64" height="60"/>
         <image name="no_photo" width="900" height="900"/>
-        <image name="star" catalog="system" width="64" height="58"/>
+        <image name="phone.circle" catalog="system" width="64" height="60"/>
+        <image name="pressure" width="512" height="512"/>
+        <image name="vending-machine" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sRq-ct-2qS"/>
-        <segue reference="3Xi-nP-ExI"/>
+        <segue reference="B54-lp-hca"/>
         <segue reference="Rl9-hg-nbE"/>
-        <segue reference="kui-2W-CCB"/>
+        <segue reference="gzy-4b-bOP"/>
     </inferredMetricsTieBreakers>
 </document>

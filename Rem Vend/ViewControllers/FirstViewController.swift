@@ -33,6 +33,7 @@ class FirstViewController: UIViewController{
         super.viewDidLoad()
         var menuPoints = [UIView]()
         //fillCoreData()
+        firstLaunch()
         menuPoints = [menuPoint1, menuPoint4, menuPoint5]
         for i in menuPoints {
             i.layer.cornerRadius = 15            
@@ -60,5 +61,14 @@ class FirstViewController: UIViewController{
         }
     }
 
+    func firstLaunch() {
+        let checkForFirstTimeLaunch = UserDefaults.standard.bool(forKey: "firstLaunch")
+        print(checkForFirstTimeLaunch)
+        if (checkForFirstTimeLaunch == false) {
+        print("First time launch")
+        fillCoreData()
+        UserDefaults.standard.set(true, forKey: "firstLaunch")
+        }
+    }
 }
 
