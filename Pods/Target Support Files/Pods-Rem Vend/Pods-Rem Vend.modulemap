@@ -1,0 +1,6 @@
+module Pods_Rem_Vend {
+  umbrella header "Pods-Rem Vend-umbrella.h"
+
+  export *
+  module * { export * }
+}
